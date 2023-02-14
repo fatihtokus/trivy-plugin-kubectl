@@ -1,5 +1,5 @@
 name: "kubectl"
-repository: github.com/aquasecurity/trivy-plugin-kubectl
+repository: github.com/fatihtokus/trivy-plugin-kubectl
 version: "0.1.0"
 usage: scan kubectl resources
 description: |-
@@ -14,10 +14,10 @@ platforms:
   - selector: # optional
       os: linux
       arch: amd64
-    uri: https://github.com/aquasecurity/trivy-plugin-kubectl/releases/download/v0.1.0/trivy-kubectl.tar.gz
+    uri: https://github.com/fatihtokus/trivy-plugin-kubectl/releases/download/v0.1.0/trivy-kubectl.tar.gz
     bin: ./trivy-kubectl
   - selector:
-      os: darwin
+      os: windows
       arch: arm64
     uri: ./trivy-kubectl
     bin: ./trivy-kubectl
